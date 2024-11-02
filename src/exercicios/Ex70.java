@@ -10,6 +10,8 @@ public class Ex70 {
 		char caracteres[] = recebepalavra.toCharArray();
 		int somador = 0;
 		for(char letra : caracteres) {
+			//metodo indexOf verifica se a letra está dentro da String, no caso a letra dentro do vetor caracteres
+			//verifico se é diferente de -1, pois se o valor for diferente do que está na string ele retorna -1
 			if("aeiou".indexOf(letra) != -1) {
 				somador += 1;
 			}
@@ -19,14 +21,13 @@ public class Ex70 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int somador = 0;
 		System.out.println("Digite uma palavra");
 		String palavra = sc.nextLine();
 		
 		int contador = contavogais(palavra);
 		
 		System.out.println("Essa palavra tem: " + contador + " vogais");
-
+		sc.close();
 	}
 
 }
