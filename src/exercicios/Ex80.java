@@ -35,3 +35,4 @@ public class Ex80 {
         scanner.close();
     }
 }
+
